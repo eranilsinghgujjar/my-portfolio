@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anil Singh - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/9e4d26bd80.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navigation section -->
+    <section class="nav" id="home">
+        <!-- Contact information -->
+        <div class="profile_name">
+            <h1>Anil Singh</h1>
+            <p><i class="fa-solid fa-envelope"></i> eranilsinghgujjar@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +62 000 000 000</p>
+        </div>
+        <!-- Navigation bar links -->
+        <div class="nav-bar">
+            <a href="#">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#recommendations">Recommendations</a>
+        </div>
+    </section>
+
+    <!-- Main content section with profile image -->
+    <section class="main">
+        <div class="image">
+            <img src="./html_finalprojimages/7502476.png" alt="profile">
+        </div>
+        <!-- About me, including introduction -->
+        <div class="main-content">
+            <h1>Hi, My name is Anil Singh! <i class="fa-regular fa-face-smile"></i></h1>
+            <p>Dedicated Front-End Developer with a Master's in Information Technology (Software Developer) from
+                Southern Cross University and one year of experience at RMS, Noida. Proficient in HTML5, CSS3, and
+                JavaScript, with expertise in React.js. Collaborative team player skilled in translating design concepts
+                into responsive and dynamic web applications. Proven track record of ensuring high performance and
+                optimal user experiences across diverse platforms. Adept at conducting code reviews and staying updated
+                on emerging technologies. Seeking opportunities to leverage skills and contribute to innovative projects
+                in a dynamic development environment.</p>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <!-- List of skills with icons and experience details -->
+        <div class="skill-list">
+            <div class="skill">
+                <i class="fa-brands fa-html5" style="color: rgb(255, 111, 0);"></i>
+                <p>HTML</p>
+                <p>1.5 Years Experience</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-css3-alt" style="color: rgb(103, 4, 240);"></i>
+                <p>CSS</p>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-square-js" style="color: rgb(255, 187, 0);"></i>
+                <p>javascript</p>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-java"></i>
+                <p>Java</p>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-angular" style="color: red;"></i>
+                <p>Angular</p>
+                <p>1 Year Experience</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-react" style="color: aqua;"></i>
+                <p>React</p>
+                <p>6 Months Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h1>Projects</h1>
+
+        <!-- List of projects with titles and descriptions -->
+        <div class="projects-list">
+            <div class="project">
+                <h2>E-Commerce</h2>
+                <ul>
+                    <li>"I successfully developed a feature-rich e-commerce website, providing users with a seamless and secure online shopping experience."</li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="project">
+                <h2>Quiz website</h2>
+                <ul>
+                    <li>"I designed and developed an engaging quiz website, offering users an interactive platform to test and enhance their knowledge."</li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="project">
+                <h2>Portfolio</h2>
+                <ul>
+                    <li>"I crafted a personalized and visually appealing portfolio website showcasing my skills and accomplishments in the field of technology and design."</li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations section -->
+    <section class="recommendations" id="recommendations">
+        <h1>Recommendations</h1>
+
+        <!-- List of recommendations with feedback content -->
+        <div class="recommendations-list">
+            <div class="recommendation">
+                <p>"Anil Singh is an exceptional front-end developer who delivered a stunning e-commerce website for our business. His attention to detail and user-centric design approach significantly enhanced the overall shopping experience for our customers."</p>
+            </div>
+            <div class="recommendation">
+                <p>"I had the pleasure of collaborating with Anil Singh on the development of a quiz website, and his expertise in creating an intuitive and engaging interface was evident. His commitment to delivering a seamless and enjoyable quiz-taking experience for users truly sets him apart."</p>
+            </div>
+            <div class="recommendation">
+                <p>"Anil Singh is a highly skilled front-end developer who created an outstanding portfolio website for me. His ability to translate my vision into a visually appealing and functional site was impressive, showcasing his proficiency in design, responsiveness, and user experience."</p>
+            </div>
+
+            <!-- Placeholder for a new recommendation -->
+            <div id="nRecommendation" class="recommendation">
+                <p id="latestRecommend"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup for new recommendations -->
+    <div id="recommend">
+        <div id="new-recommend">
+            <i class="fa-regular fa-circle-check"></i>
+            <h2>Thanks for leaving a recommendation!</h2>
+            <button onclick="closePopup()" class="btn" id="closePopup">OK</button>
+        </div>
+    </div>
+
+    <!-- Feedback section for leaving a new recommendation -->
+    <section class="feedback">
+        <div class="feedback-content">
+            <h2>Leave a Recommendation</h2>
+            <input type="text" id="name" placeholder="Name (optional)"><br>
+            <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <button onclick="addRecommendation()" type="submit" class="btn">Submit</button>
+        </div>
+    </section>
+
+    <!-- Footer with a link to scroll back to the top -->
+    <footer>
+        <a href="#home" ><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+</body>
+</html>
